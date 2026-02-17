@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f8;
+}
+
+/* ===== LOGIN ===== */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-wrapper {
+    display: flex;
+    width: 900px;
+    height: 500px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.login-image {
+    flex: 1;
+    background: url('https://images.unsplash.com/photo-1542838132-92c53300491e') center/cover;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+
+.login-form {
+    flex: 1;
+    padding: 40px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    background: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* ===== DASHBOARD ===== */
+
+.layout {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 220px;
+    background: #198754;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar a {
+    margin: 8px 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebar a.active {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+}
+
+.sidebar button {
+    margin-top: auto;
+    padding: 10px;
+    border: none;
+    background: #dc3545;
+    color: white;
+    cursor: pointer;
+}
+
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Topbar */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.topbar input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card.green h3 {
+    color: #198754;
+}
+
+.card.orange h3 {
+    color: #fd7e14;
+}
+
+/* Panels */
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.panel {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.chart {
+    height: 200px;
+    background: #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inventory-img {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+}
